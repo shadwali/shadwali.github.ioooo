@@ -5,7 +5,6 @@
 }
 
 body {
-    background: radial-gradient(#333, #000);
     background-color: #000;
 }
 
@@ -119,7 +118,7 @@ body {
         object-fit: contain;
         filter: grayscale(00%);
         image-rendering: pixelated;
-        filter: grayscale(100%);
+        filter: grayscale(00%);
     }
     .bottom-right img {
         display: none;
@@ -128,6 +127,10 @@ body {
         display: none;
     }
     .top-flower {
+        display: none;
+    }
+    .console-container,
+    .name-con {
         display: none;
     }
 }
@@ -141,12 +144,17 @@ body {
     width: auto;
     height: auto;
     z-index: -1;
+    visibility: hidden;
 }
 
 .top-flower {
     position: absolute;
     top: 0;
     left: 0;
+}
+
+.top-flower img {
+    opacity: 0;
 }
 
 .bottom-img {
@@ -166,6 +174,7 @@ body {
     left: 200px;
     width: 380px;
     height: 270px;
+    opacity: 0;
 }
 
 .bottom-right {
@@ -178,4 +187,5 @@ body {
 .bottom-right img {
     width: 350px;
     height: 200px;
+    opacity: 0;
 }
