@@ -54,5 +54,5 @@ setTimeout(() => {
             document.getElementById(String(square_index[i])).src = 'Shadwali/' + String(square[i]) + '.jpg';
 
         }
-    }, 10000);
-}, 170000);
+    }, 20000);
+}, 190000);
